@@ -26,8 +26,8 @@ SECRET_KEY = 'django-insecure-o=5(4mll+b#neag6)_n=oa!zjobri_wt6@@*cy_&d=e)5$ex4a
 DEBUG = True
 
 # Stripe settings
-STRIPE_PUBLIC_KEY = 'pk_test_51PG6VKEShB3ZT1fJLaLYqIheFkq839SMPyszkluYsZMSwYpzzeQDvD7PaaDDgWZyF4yepwDctpj0uVJYPm0s4pVv00oRNDUphx'
-STRIPE_PRIVATE_KEY = 'sk_test_51PG6VKEShB3ZT1fJ1TJdbhqcDTuL3XxufyefULUqKL4uyrTPky8UGVh8AVLGzv9hbMHlYFvIa08kx848X4mF4Zoi00X6NVkIfy'
+STRIPE_PUBLIC_KEY = '[put public key from stripe]'
+STRIPE_PRIVATE_KEY = '[put private key from stripe]'
 # product key charity: price_1PG6eZEShB3ZT1fJRi0EonFw
 ALLOWED_HOSTS = []
 

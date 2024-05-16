@@ -10,5 +10,25 @@
     <hr>
     <p>Feel free to send a donation...</p>
     <br />
+    <button id="stripe-checkout" type="submit" class="btn btn-info text-white w-50">
+        <ii class="fa fa-credit-card" aria-hidden="true"></ii>&nbsp; Pay with stripe
+    </button>
+    <br />
+    <br />
 </div>
+
+<!-- STRIPE JS #1 -->
+<script src="https://js.stripe.com/v3/"></script>
+<!-- STRIPE JS #2 -->
+<script>
+    var stripe_public_key = Stripe('{{ stripe_public_key }}');
+    const pay_now_button = document.querySelector('#stripe-checkout');
+    pay_now_button.addEventListener('click', event => {
+        stripe_public_key.redirectToCheckout({
+            sessionId: '{{ session_id }}'
+        }).then(function(result) {
+            console.log(result)
+        });
+    });
+</script>
 {% endblock %}
